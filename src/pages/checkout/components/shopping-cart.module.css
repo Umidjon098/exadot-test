@@ -1,0 +1,43 @@
+.shopping_cart {
+  width: 100%;
+  aspect-ratio: 6 / 5;
+}
+
+.cart_header {
+  padding: 23px 0;
+  margin-bottom: 24px;
+  border-bottom: 1.5px solid #d0cfcf;
+}
+
+.cart_header .title {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #000;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.cart_header .title::before {
+  content: url("/public/arrow-left.png");
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 32px;
+}
+.cart_content_top {
+  margin-bottom: 30px;
+}
+.cart_content_top .title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cart_content_top .desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1e1e1e;
+  line-height: normal;
+}

@@ -1,0 +1,115 @@
+.card_details {
+  width: 100%;
+  max-width: 388px;
+  background: #565abb;
+  aspect-ratio: 5 / 8;
+  border-radius: 20px;
+  padding: 19px;
+  position: sticky;
+  top: 50px;
+}
+
+.card_header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  justify-content: space-between;
+}
+.card_title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  color: #fff;
+}
+
+.payment_types {
+  display: flex;
+  gap: 17px;
+  margin-bottom: 27px;
+}
+
+.payment_type_item {
+  width: 75px;
+  height: 55px;
+  border-radius: 5px;
+  background: #d9d9d933;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card_detail_form .form_group {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.form_group label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #fefcfc;
+}
+
+.form_group input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 11px 18px;
+  background: #6268c6;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.form_group input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #c4c4c4;
+}
+
+.price_box {
+  margin-bottom: 26px;
+}
+
+.price_box .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #fefcfc;
+  margin-bottom: 6px;
+}
+
+button {
+  position: relative;
+  display: flex;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fefcfc;
+  border-radius: 12px;
+  padding: 18px 20px;
+  padding-right: 60px;
+  background: #4de1c1;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.btn_link::after {
+  content: url("/public/arrow-right.png");
+  position: absolute;
+  right: 20px;
+}

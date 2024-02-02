@@ -1,0 +1,82 @@
+.cart_product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 10px 23px 10px 10px;
+  box-shadow: 0px 1px 4px 0px #00000040;
+  margin-bottom: 24px;
+}
+
+.general_data {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.product_name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+.product_desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.action_btns {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.action_btns .count {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.action_btns .price {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.action_btns .delete::after {
+  content: url("/public/delete.png");
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.counter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.inc::after,
+.dec::after {
+  position: absolute;
+  height: 10px;
+  left: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all ease 200ms;
+}
+.inc:hover::after {
+  top: -5px;
+}
+.dec:hover::after {
+  bottom: -5px;
+}
+.inc::after {
+  content: url(/public/arrow-top.png);
+  top: 0;
+}
+.dec::after {
+  content: url(/public/arrow-bottom.png);
+  bottom: 0;
+}
